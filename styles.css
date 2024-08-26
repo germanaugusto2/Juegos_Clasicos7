@@ -1,0 +1,139 @@
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  background-image: url('imagenes/Fondo2.gif');
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Estilos generales para títulos */
+h1, h3 {
+  color: #12d6b6;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #00ff2a;
+}
+
+p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Estilos para la lista de juegos */
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+}
+
+/* Estilos para las tarjetas de juego */
+.game-card {
+  background-color: rgba(255, 255, 255, 0.28); /* color semi-transparente */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.game-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.game-card img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Estilos específicos para el contenedor con efecto neón */
+.container.neon-container {
+  border: 2px solid white;
+  box-shadow: inset 0 0 5px red, 0 0 10px red;
+  border-radius: 60px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 140px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+/* Efectos de texto neón */
+.neon {
+  font-family: "Dancing Script", cursive;
+  margin: 0;
+  font-size: 50px;
+  text-shadow: 0 0 5px rgb(255, 230, 0), 0 0 15px rgb(255, 251, 0), 0 0 30px rgb(251, 255, 0), 0 0 50px rgb(255, 217, 0);
+}
+
+.neon2 {
+  font-family: monospace;
+  letter-spacing: 8px;
+  margin: 0;
+  font-size: 100px;
+  text-shadow: 0 0 5px yellow, 0 0 15px yellow, 0 0 30px yellow;
+}
+
+.neon3 {
+  font-family: monospace;
+  margin: 0;
+  font-size: 20px;
+  text-shadow: 0 0 5px white, 0 0 15px white, 0 0 30px white;
+}
+
+/* Efectos de parpadeo */
+.flicker1 {
+  animation: parpadear 2s infinite steps(3);
+}
+
+.flicker2 {
+  animation: parpadear 2.5s infinite steps(4);
+}
+
+.flicker3 {
+  animation: parpadear 1.5s infinite steps(2);
+}
+
+@keyframes parpadear {
+  0%, 100% {
+      color: inherit;
+      text-shadow: inherit;
+  }
+  50% {
+      color: gray;
+      text-shadow: none;
+  }
+}
+
+  

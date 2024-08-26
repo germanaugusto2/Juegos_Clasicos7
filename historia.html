@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos Populares - Futurista</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0e0e0e;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #0f0;
+        }
+        header h1 {
+            color: #0f0;
+            font-size: 2.5em;
+            margin: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #1c1c1c;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.3);
+        }
+        .game {
+            border: 1px solid #444;
+            border-radius: 10px;
+            margin: 10px 0;
+            padding: 15px;
+            background: #2a2a2a;
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+        }
+        .game:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+        }
+        .game img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .game h2 {
+            color: #0f0;
+            margin-top: 0;
+            font-size: 1.8em;
+        }
+        .game p {
+            margin: 5px 0;
+        }
+        .game span {
+            font-weight: bold;
+        }
+        footer {
+            background: #1a1a1a;
+            padding: 10px;
+            text-align: center;
+            color: #0f0;
+            border-top: 2px solid #0f0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        footer a {
+            color: #0f0;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juegos Populares</h1>
+    </header>
+    <div class="container">
+        <div class="game">
+            <img src="imagenes_info/a/imagen-tanque.jpg" alt="Juego del Tanque">
+            <h2>Juego del Tanque</h2>
+            <p><span>Fecha de Creación:</span> 1980</p>
+            <p><span>Número de Ventas:</span> 10 millones</p>
+            <p><span>Creador:</span> Atari</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-invasores.jpg" alt="Invasores">
+            <h2>Invasores</h2>
+            <p><span>Fecha de Creación:</span> 1978</p>
+            <p><span>Número de Ventas:</span> 50 millones</p>
+            <p><span>Creador:</span> Tomohiro Nishikado</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-rompecabezas.jpg" alt="Rompecabezas">
+            <h2>Rompecabezas</h2>
+            <p><span>Fecha de Creación:</span> 1985</p>
+            <p><span>Número de Ventas:</span> 15 millones</p>
+            <p><span>Creador:</span> Puzzle Studios</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-minas.jpg" alt="Minas">
+            <h2>Minas</h2>
+            <p><span>Fecha de Creación:</span> 1990</p>
+            <p><span>Número de Ventas:</span> 30 millones</p>
+            <p><span>Creador:</span> Microsoft</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-memoria.jpg" alt="Juego de Memoria">
+            <h2>Juego de Memoria</h2>
+            <p><span>Fecha de Creación:</span> 1995</p>
+            <p><span>Número de Ventas:</span> 5 millones</p>
+            <p><span>Creador:</span> Memory Corp</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-tic-tac-toe.jpg" alt="Tic Tac Toe">
+            <h2>Tic Tac Toe</h2>
+            <p><span>Fecha de Creación:</span> 1950</p>
+            <p><span>Número de Ventas:</span> 2 millones</p>
+            <p><span>Creador:</span> Desconocido</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-ahorcado.jpg" alt="Ahorcado Digital">
+            <h2>Ahorcado Digital</h2>
+            <p><span>Fecha de Creación:</span> 2000</p>
+            <p><span>Número de Ventas:</span> 8 millones</p>
+            <p><span>Creador:</span> Digital Games</p>
+        </div>
+        <div class="game">
+            <img src="ruta/a/imagen-pac-man.jpg" alt="Pac Man">
+            <h2>Pac Man</h2>
+            <p><span>Fecha de Creación:</span> 1980</p>
+            <p><span>Número de Ventas:</span> 30 millones</p>
+            <p><span>Creador:</span> Namco</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/mariobros_info.jpg" alt="Super Mario Bros">
+            <h2>Super Mario Bros</h2>
+            <p><span>Fecha de Creación:</span> 1985</p>
+            <p><span>Número de Ventas:</span> 40 millones</p>
+            <p><span>Creador:</span> Nintendo</p>
+        </div>
+        <div class="game">
+            <img src="ruta/a/imagen-flappy-dino.jpg" alt="Flappy Dino">
+            <h2>Flappy Dino</h2>
+            <p><span>Fecha de Creación:</span> 2014</p>
+            <p><span>Número de Ventas:</span> 20 millones</p>
+            <p><span>Creador:</span> Google</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-tetris.jpg" alt="Tetris">
+            <h2>Tetris</h2>
+            <p><span>Fecha de Creación:</span> 1984</p>
+            <p><span>Número de Ventas:</span> 100 millones</p>
+            <p><span>Creador:</span> Alexey Pajitnov</p>
+        </div>
+        <div class="game">
+            <img src="ruta/a/imagen-ping-pong.jpg" alt="Ping Pong">
+            <h2>Ping Pong</h2>
+            <p><span>Fecha de Creación:</span> 1972</p>
+            <p><span>Número de Ventas:</span> 8 millones</p>
+            <p><span>Creador:</span> Atari</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-tower-blocks.jpg" alt="Tower Blocks">
+            <h2>Tower Blocks</h2>
+            <p><span>Fecha de Creación:</span> 2005</p>
+            <p><span>Número de Ventas:</span> 6 millones</p>
+            <p><span>Creador:</span> Block Studios</p>
+        </div>
+        <div class="game">
+            <img src="imagenes_info/a/imagen-color-game.jpg" alt="Color Game Digital">
+            <h2>Color Game Digital</h2>
